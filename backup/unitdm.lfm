@@ -1,0 +1,66 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 346
+  HorizontalOffset = 274
+  VerticalOffset = 107
+  Width = 402
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    Properties.Strings = (
+      'RawStringEncoding=DB_CP'
+    )
+    DisableSavepoints = False
+    HostName = 'localhost'
+    Port = 3308
+    Database = 'matheus'
+    User = 'root'
+    Password = 'softlotus'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\STS\libmysql.dll'
+    Left = 176
+    Top = 16
+  end
+  object zqClientes: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'select * from clientes'
+    )
+    Params = <>
+    Left = 264
+    Top = 80
+  end
+  object zqFornecedores: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'select * from fornecedores'
+    )
+    Params = <>
+    Left = 88
+    Top = 80
+  end
+  object zqProdutos: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'select * from produtos'
+      ''
+    )
+    Params = <>
+    Left = 176
+    Top = 80
+  end
+  object zqPedidos: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'select * from pedidosm'
+    )
+    Params = <>
+    Left = 216
+    Top = 144
+  end
+  object zqTemp: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    Left = 264
+    Top = 176
+  end
+end

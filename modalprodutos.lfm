@@ -1,0 +1,94 @@
+object frmBuscaProdutos: TfrmBuscaProdutos
+  Left = 450
+  Height = 322
+  Top = 160
+  Width = 453
+  Caption = 'frmBuscaProdutos'
+  ClientHeight = 322
+  ClientWidth = 453
+  OnShow = FormShow
+  LCLVersion = '3.2.0.0'
+  object DBGrid1: TDBGrid
+    Left = 16
+    Height = 197
+    Top = 32
+    Width = 424
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'Codigo'
+        FieldName = 'codigo'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'Nome '
+        Width = 200
+        FieldName = 'nome'
+      end    
+      item
+        Alignment = taRightJustify
+        Title.Alignment = taCenter
+        Title.Caption = 'Valor/Unidade'
+        Width = 100
+        FieldName = 'ValorUnd'
+        DisplayFormat = '#,##0.00'
+      end>
+    DataSource = dsProdutos
+    TabOrder = 0
+    OnDblClick = DBGrid1DblClick
+  end
+  object JvCalcEdit1: TJvCalcEdit
+    Left = 272
+    Height = 23
+    Top = 240
+    Width = 103
+    CalculatorLayout = clNormal
+    DialogTop = 0
+    DialogLeft = 0
+    ButtonWidth = 0
+    NumGlyphs = 1
+    Alignment = taRightJustify
+    HideSelection = True
+    TabOrder = 1
+    DecimalPlacesAlwaysShown = False
+  end
+  object rxProdutos: TRxMemoryData
+    FieldDefs = <>
+    PacketRecords = 0
+    Left = 32
+    Top = 240
+    object rxProdutoscodigo: TLongintField
+      FieldKind = fkData
+      FieldName = 'codigo'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxProdutosnome: TStringField
+      FieldKind = fkData
+      FieldName = 'nome'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object rxProdutosValorUnd: TFloatField
+      FieldKind = fkData
+      FieldName = 'ValorUnd'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dsProdutos: TDataSource
+    DataSet = rxProdutos
+    Left = 104
+    Top = 240
+  end
+end

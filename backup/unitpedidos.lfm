@@ -1,0 +1,501 @@
+object frmPedidos: TfrmPedidos
+  Left = 275
+  Height = 616
+  Top = 105
+  Width = 576
+  Caption = 'frmPedidos'
+  ClientHeight = 616
+  ClientWidth = 576
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '3.2.0.0'
+  object btCriarPedido: TButton
+    Left = 48
+    Height = 35
+    Top = 64
+    Width = 90
+    Caption = 'Criar'
+    TabOrder = 0
+    OnClick = btCriarPedidoClick
+  end
+  object btAlterarPedido: TButton
+    Left = 146
+    Height = 35
+    Top = 64
+    Width = 90
+    Caption = 'Alterar '
+    TabOrder = 1
+    OnClick = btAlterarPedidoClick
+  end
+  object btSalvarPedido: TButton
+    Left = 244
+    Height = 35
+    Top = 64
+    Width = 90
+    Caption = 'Salvar '
+    Enabled = False
+    TabOrder = 2
+    OnClick = btSalvarPedidoClick
+  end
+  object btCancelar: TButton
+    Left = 341
+    Height = 35
+    Top = 64
+    Width = 90
+    Caption = 'Cancelar'
+    Enabled = False
+    TabOrder = 3
+    OnClick = btCancelarClick
+  end
+  object btExcluirPedido: TButton
+    Left = 439
+    Height = 35
+    Top = 64
+    Width = 90
+    Caption = 'Excluir'
+    TabOrder = 4
+    OnClick = btExcluirPedidoClick
+  end
+  object btConsultarPedido: TButton
+    Left = 115
+    Height = 23
+    Top = 28
+    Width = 63
+    Caption = 'Consultar'
+    TabOrder = 5
+    OnClick = btConsultarPedidoClick
+  end
+  object edtCodPedido: TEdit
+    Left = 48
+    Height = 23
+    Top = 28
+    Width = 63
+    NumbersOnly = True
+    TabOrder = 6
+  end
+  object edtCodCliente: TEdit
+    Left = 48
+    Height = 23
+    Top = 131
+    Width = 80
+    Enabled = False
+    NumbersOnly = True
+    TabOrder = 7
+  end
+  object btBuscarCliente: TButton
+    Left = 135
+    Height = 23
+    Top = 131
+    Width = 57
+    Caption = 'Buscar'
+    Enabled = False
+    TabOrder = 8
+    OnClick = btBuscarClienteClick
+  end
+  object Label3: TLabel
+    Left = 138
+    Height = 15
+    Top = 225
+    Width = 62
+    Caption = 'Quantidade'
+    Enabled = False
+  end
+  object edtQntdProd: TEdit
+    Left = 138
+    Height = 23
+    Top = 244
+    Width = 80
+    Enabled = False
+    NumbersOnly = True
+    TabOrder = 9
+  end
+  object Label5: TLabel
+    Left = 48
+    Height = 15
+    Top = 225
+    Width = 54
+    Caption = 'Valor Und.'
+    Enabled = False
+  end
+  object edtValorUnitProd: TEdit
+    Left = 48
+    Height = 23
+    Top = 244
+    Width = 80
+    Enabled = False
+    NumbersOnly = True
+    TabOrder = 10
+  end
+  object edtNomeProd: TEdit
+    Left = 244
+    Height = 23
+    Top = 195
+    Width = 285
+    Enabled = False
+    TabOrder = 11
+  end
+  object Label4: TLabel
+    Left = 244
+    Height = 15
+    Top = 176
+    Width = 61
+    Caption = 'Nome Prod'
+    Enabled = False
+  end
+  object btBuscarProd: TButton
+    Left = 135
+    Height = 23
+    Top = 196
+    Width = 57
+    Caption = 'Buscar'
+    Enabled = False
+    TabOrder = 12
+    OnClick = btBuscarProdClick
+  end
+  object edtCodProd: TEdit
+    Left = 48
+    Height = 23
+    Top = 196
+    Width = 80
+    Enabled = False
+    NumbersOnly = True
+    TabOrder = 13
+  end
+  object Label1: TLabel
+    Left = 48
+    Height = 15
+    Top = 177
+    Width = 68
+    Caption = 'Cod Produto'
+    Color = clBlack
+    Enabled = False
+    ParentColor = False
+  end
+  object edtDescontoPorcent: TEdit
+    Left = 466
+    Height = 23
+    Top = 246
+    Width = 63
+    Enabled = False
+    NumbersOnly = True
+    TabOrder = 14
+    Text = '0'
+    OnEditingDone = edtDescontoPorcentEditingDone
+  end
+  object Label6: TLabel
+    Left = 466
+    Height = 15
+    Top = 227
+    Width = 63
+    Caption = '% Desconto'
+    Enabled = False
+  end
+  object edtNomeCliente: TEdit
+    Left = 244
+    Height = 23
+    Top = 131
+    Width = 164
+    Enabled = False
+    TabOrder = 15
+  end
+  object Label7: TLabel
+    Left = 244
+    Height = 15
+    Top = 112
+    Width = 33
+    Caption = 'Nome'
+    Enabled = False
+  end
+  object edtCpfCliente: TEdit
+    Left = 417
+    Height = 23
+    Top = 131
+    Width = 112
+    Enabled = False
+    NumbersOnly = True
+    TabOrder = 16
+  end
+  object Label8: TLabel
+    Left = 416
+    Height = 15
+    Top = 112
+    Width = 53
+    Caption = 'CPF/CNPJ'
+    Enabled = False
+  end
+  object btAddItem: TButton
+    Left = 244
+    Height = 25
+    Top = 244
+    Width = 31
+    Caption = '+'
+    Color = clLime
+    Enabled = False
+    TabOrder = 17
+    OnClick = btAddItemClick
+  end
+  object btItemCancel: TButton
+    Left = 200
+    Height = 22
+    Top = 196
+    Width = 31
+    Caption = 'X'
+    Color = clLime
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 18
+    OnClick = btItemCancelClick
+  end
+  object btClienteCancel: TButton
+    Left = 200
+    Height = 22
+    Top = 132
+    Width = 31
+    Caption = 'X'
+    Color = clLime
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 19
+    OnClick = btClienteCancelClick
+  end
+  object DBGrid1: TDBGrid
+    Left = 48
+    Height = 168
+    Top = 273
+    Width = 481
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'Cod'
+        Width = 40
+        FieldName = 'Cod'
+      end    
+      item
+        Title.Caption = 'Nome'
+        Width = 170
+        FieldName = 'Nome'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'Qntd'
+        Width = 50
+        FieldName = 'Qntd'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = 'Preço/Und'
+        Width = 80
+        FieldName = 'VlrUnd'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = 'Valor Total Item'
+        Width = 100
+        FieldName = 'VlrTotal'
+      end>
+    DataSource = dsItensPedido
+    Enabled = False
+    TabOrder = 20
+  end
+  object btUpDown: TUpDown
+    Left = 218
+    Height = 23
+    Top = 244
+    Width = 16
+    Associate = edtQntdProd
+    Enabled = False
+    Max = 1000
+    Min = 0
+    Position = 0
+    TabOrder = 21
+  end
+  object Label2: TLabel
+    Left = 48
+    Height = 15
+    Top = 112
+    Width = 62
+    Caption = 'Cod Cliente'
+    Enabled = False
+  end
+  object edtDataPedido: TEdit
+    Left = 219
+    Height = 23
+    Top = 28
+    Width = 81
+    Enabled = False
+    TabOrder = 22
+  end
+  object Label9: TLabel
+    Left = 187
+    Height = 23
+    Top = 28
+    Width = 31
+    AutoSize = False
+    Caption = 'Data'
+    Enabled = False
+    Layout = tlCenter
+  end
+  object cbxStatusPedido: TComboBox
+    Left = 429
+    Height = 23
+    Top = 28
+    Width = 100
+    Enabled = False
+    ItemHeight = 15
+    Items.Strings = (
+      'Aberto'
+      'Fechado'
+    )
+    TabOrder = 23
+  end
+  object edtHoraPedido: TEdit
+    Left = 339
+    Height = 23
+    Top = 28
+    Width = 81
+    Enabled = False
+    TabOrder = 24
+  end
+  object Label10: TLabel
+    Left = 307
+    Height = 23
+    Top = 28
+    Width = 31
+    AutoSize = False
+    Caption = 'Hora'
+    Enabled = False
+    Layout = tlCenter
+  end
+  object edtValorDesconto: TEdit
+    Left = 232
+    Height = 35
+    Top = 464
+    Width = 120
+    Alignment = taRightJustify
+    AutoSize = False
+    Enabled = False
+    NumbersOnly = True
+    TabOrder = 25
+  end
+  object Label12: TLabel
+    Left = 232
+    Height = 15
+    Top = 504
+    Width = 120
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Valor Desconto'
+    Enabled = False
+  end
+  object edtSubTotal: TEdit
+    Left = 48
+    Height = 35
+    Top = 464
+    Width = 120
+    Alignment = taRightJustify
+    AutoSize = False
+    Enabled = False
+    NumbersOnly = True
+    TabOrder = 26
+  end
+  object edtValorTotalPedido: TEdit
+    Left = 409
+    Height = 35
+    Top = 464
+    Width = 120
+    Alignment = taRightJustify
+    AutoSize = False
+    Enabled = False
+    NumbersOnly = True
+    TabOrder = 27
+  end
+  object Label13: TLabel
+    Left = 48
+    Height = 15
+    Top = 504
+    Width = 120
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'SubTotal Itens'
+    Enabled = False
+  end
+  object Label14: TLabel
+    Left = 409
+    Height = 15
+    Top = 504
+    Width = 120
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'TOTAL FINAL'
+    Enabled = False
+  end
+  object dsItensPedido: TDataSource
+    DataSet = rxItensPedido
+    Left = 72
+    Top = 393
+  end
+  object rxItensPedido: TRxMemoryData
+    FieldDefs = <>
+    PacketRecords = 0
+    Left = 160
+    Top = 393
+    object rxItensPedidoCod: TLongintField
+      FieldKind = fkData
+      FieldName = 'Cod'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxItensPedidoNome: TStringField
+      FieldKind = fkData
+      FieldName = 'Nome'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object rxItensPedidoQntd: TLongintField
+      FieldKind = fkData
+      FieldName = 'Qntd'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxItensPedidoVlrUnd: TFloatField
+      FieldKind = fkData
+      FieldName = 'VlrUnd'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object rxItensPedidoVlrTotal: TFloatField
+      FieldKind = fkData
+      FieldName = 'VlrTotal'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+end

@@ -1,0 +1,158 @@
+object frmClientes: TfrmClientes
+  Left = 339
+  Height = 473
+  Top = 184
+  Width = 581
+  Caption = 'frmClientes'
+  ClientHeight = 473
+  ClientWidth = 581
+  OnClose = FormClose
+  LCLVersion = '3.2.0.0'
+  object btIncluir: TButton
+    Left = 83
+    Height = 25
+    Top = 63
+    Width = 69
+    Caption = 'Incluir'
+    TabOrder = 0
+    OnClick = btIncluirClick
+  end
+  object btAlterar: TButton
+    Left = 167
+    Height = 25
+    Top = 64
+    Width = 69
+    Caption = 'Alterar'
+    TabOrder = 1
+    OnClick = btAlterarClick
+  end
+  object btSalvar: TButton
+    Left = 256
+    Height = 25
+    Top = 63
+    Width = 69
+    Caption = 'Salvar'
+    Enabled = False
+    TabOrder = 2
+    OnClick = btSalvarClick
+  end
+  object btExcluir: TButton
+    Left = 421
+    Height = 25
+    Top = 63
+    Width = 69
+    Caption = 'Excluir'
+    TabOrder = 3
+    OnClick = btExcluirClick
+  end
+  object btCancelar: TButton
+    Left = 336
+    Height = 25
+    Top = 63
+    Width = 69
+    Caption = 'Cancelar'
+    Enabled = False
+    TabOrder = 4
+    OnClick = btCancelarClick
+  end
+  object edtNome: TEdit
+    Left = 87
+    Height = 23
+    Top = 133
+    Width = 114
+    TabOrder = 5
+  end
+  object lblNome: TLabel
+    Left = 88
+    Height = 15
+    Top = 112
+    Width = 33
+    Caption = 'Nome'
+  end
+  object edtCPF: TEdit
+    Left = 232
+    Height = 23
+    Top = 133
+    Width = 114
+    TabOrder = 6
+  end
+  object lblCPF: TLabel
+    Left = 232
+    Height = 15
+    Top = 112
+    Width = 21
+    Caption = 'CPF'
+  end
+  object edtRG: TEdit
+    Left = 376
+    Height = 23
+    Top = 133
+    Width = 114
+    TabOrder = 7
+  end
+  object lblRG: TLabel
+    Left = 376
+    Height = 15
+    Top = 112
+    Width = 15
+    Caption = 'RG'
+  end
+  object edtEndereco: TEdit
+    Left = 232
+    Height = 23
+    Top = 205
+    Width = 258
+    TabOrder = 8
+  end
+  object lblEndereco: TLabel
+    Left = 233
+    Height = 15
+    Top = 184
+    Width = 49
+    Caption = 'Endereço'
+  end
+  object edtCEP: TEdit
+    Left = 88
+    Height = 23
+    Top = 205
+    Width = 114
+    TabOrder = 9
+  end
+  object lblCEP: TLabel
+    Left = 88
+    Height = 15
+    Top = 184
+    Width = 21
+    Caption = 'CEP'
+  end
+  object edtTelefone: TEdit
+    Left = 88
+    Height = 23
+    Top = 277
+    Width = 146
+    TabOrder = 10
+  end
+  object lblTelefone: TLabel
+    Left = 88
+    Height = 15
+    Top = 256
+    Width = 44
+    Caption = 'Telefone'
+  end
+  object btConsultar: TButton
+    Left = 256
+    Height = 29
+    Top = 24
+    Width = 66
+    Caption = 'Consultar'
+    TabOrder = 11
+    OnClick = btConsultarClick
+  end
+  object edtCod: TEdit
+    Left = 170
+    Height = 23
+    Top = 24
+    Width = 67
+    TabOrder = 12
+  end
+end

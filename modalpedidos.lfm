@@ -1,0 +1,8 @@
+object frmBuscaPedidos: TfrmBuscaPedidos
+  Left = 274
+  Height = 240
+  Top = 99
+  Width = 320
+  AutoSize = True
+  LCLVersion = '3.2.0.0'
+end

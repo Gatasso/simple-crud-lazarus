@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="banco"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="JvStdCtrlsLazR"/>
+      </Item>
+      <Item>
+        <PackageName Value="JvStdCtrlsLazD"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="rxnew"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponentdesign"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="banco.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unitPrincipal"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitdm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="unitDM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmClientes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unitClientes"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitfornecedores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmFornecedor"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unitFornecedores"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmProdutos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitpedidos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPedidos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitenablecontrol.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="unitEnableControl"/>
+      </Unit>
+      <Unit>
+        <Filename Value="modalprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBuscaProdutos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="modalProdutos"/>
+      </Unit>
+      <Unit>
+        <Filename Value="modalclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBuscaClientes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="modalClientes"/>
+      </Unit>
+      <Unit>
+        <Filename Value="modalpedidos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBuscaPedidos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="banco"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

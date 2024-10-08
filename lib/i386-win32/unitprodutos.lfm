@@ -1,0 +1,247 @@
+object frmProdutos: TfrmProdutos
+  Left = 271
+  Height = 600
+  Top = 101
+  Width = 600
+  Caption = 'frmProdutos'
+  ChildSizing.VerticalSpacing = 100
+  ClientHeight = 600
+  ClientWidth = 600
+  Color = clWhite
+  OnClose = FormClose
+  LCLVersion = '3.2.0.0'
+  object pnlHeader: TPanel
+    Left = 0
+    Height = 100
+    Top = 0
+    Width = 600
+    Align = alTop
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 100
+    ClientWidth = 600
+    ParentBackground = False
+    TabOrder = 0
+    object pnlCodProd: TPanel
+      Left = 1
+      Height = 50
+      Top = 1
+      Width = 598
+      Align = alTop
+      ChildSizing.LeftRightSpacing = 20
+      ChildSizing.HorizontalSpacing = 10
+      ChildSizing.EnlargeVertical = crsHomogenousSpaceResize
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 2
+      ClientHeight = 50
+      ClientWidth = 598
+      Color = 15827768
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 0
+      object edtCodProd: TEdit
+        Left = 20
+        Height = 25
+        Top = 13
+        Width = 80
+        TabOrder = 1
+      end
+      object btConsultarProd: TButton
+        Left = 110
+        Height = 25
+        Top = 13
+        Width = 77
+        Caption = 'Consultar'
+        TabOrder = 0
+        OnClick = btConsultarProdClick
+      end
+    end
+    object pnlOp: TPanel
+      Left = 1
+      Height = 50
+      Top = 51
+      Width = 598
+      Align = alTop
+      ChildSizing.LeftRightSpacing = 20
+      ChildSizing.TopBottomSpacing = 10
+      ChildSizing.HorizontalSpacing = 30
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.Layout = cclTopToBottomThenLeftToRight
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 50
+      ClientWidth = 598
+      Color = 15827768
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 1
+      object btIncluirProd: TButton
+        Left = 20
+        Height = 25
+        Top = 10
+        Width = 85
+        Caption = 'Incluir'
+        TabOrder = 0
+        OnClick = btIncluirProdClick
+      end
+      object btAlterarProd: TButton
+        Left = 135
+        Height = 25
+        Top = 10
+        Width = 87
+        Caption = 'Alterar'
+        TabOrder = 1
+        OnClick = btAlterarProdClick
+      end
+      object btSalvarProd: TButton
+        Left = 252
+        Height = 25
+        Top = 10
+        Width = 83
+        Caption = 'Salvar'
+        Enabled = False
+        TabOrder = 2
+        OnClick = btSalvarProdClick
+      end
+      object btCancelarProd: TButton
+        Left = 365
+        Height = 25
+        Top = 10
+        Width = 98
+        Caption = 'Cancelar'
+        Enabled = False
+        TabOrder = 3
+        OnClick = btCancelarProdClick
+      end
+      object btExcluirProd: TButton
+        Left = 493
+        Height = 25
+        Top = 10
+        Width = 85
+        Caption = 'Excluir'
+        TabOrder = 4
+        OnClick = btExcluirProdClick
+      end
+    end
+  end
+  object pnlBody: TPanel
+    Left = 0
+    Height = 400
+    Top = 200
+    Width = 600
+    Align = alClient
+    ClientHeight = 400
+    ClientWidth = 600
+    ParentBackground = False
+    TabOrder = 1
+    object pnlProd1: TPanel
+      Left = 1
+      Height = 80
+      Top = 1
+      Width = 598
+      Align = alTop
+      ChildSizing.LeftRightSpacing = 40
+      ChildSizing.TopBottomSpacing = 10
+      ChildSizing.HorizontalSpacing = 40
+      ChildSizing.VerticalSpacing = 5
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 3
+      ClientHeight = 80
+      ClientWidth = 598
+      ParentBackground = False
+      TabOrder = 0
+      object lblNomeProd: TLabel
+        Left = 40
+        Height = 15
+        Top = 10
+        Width = 146
+        Caption = 'Nome'
+      end
+      object lblCodBarrasProd: TLabel
+        Left = 226
+        Height = 15
+        Top = 10
+        Width = 146
+        Caption = 'Cod.Barras'
+      end
+      object lblValorUntProd: TLabel
+        Left = 412
+        Height = 15
+        Top = 10
+        Width = 146
+        Caption = 'Valor Unitário'
+      end
+      object edtNomeProd: TEdit
+        Left = 40
+        Height = 23
+        Top = 30
+        Width = 146
+        Enabled = False
+        TabOrder = 0
+      end
+      object edtCodBarrasProd: TEdit
+        Left = 226
+        Height = 23
+        Top = 30
+        Width = 146
+        Enabled = False
+        TabOrder = 1
+      end
+      object edtValorUntProd: TEdit
+        Left = 412
+        Height = 23
+        Top = 30
+        Width = 146
+        Enabled = False
+        TabOrder = 2
+      end
+    end
+    object pnlProd2: TPanel
+      Left = 1
+      Height = 80
+      Top = 81
+      Width = 598
+      Align = alTop
+      ChildSizing.LeftRightSpacing = 40
+      ChildSizing.TopBottomSpacing = 15
+      ChildSizing.HorizontalSpacing = 50
+      ChildSizing.VerticalSpacing = 5
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 2
+      ClientHeight = 80
+      ClientWidth = 598
+      ParentBackground = False
+      TabOrder = 1
+      object lblDescricaoProd: TLabel
+        Left = 40
+        Height = 15
+        Top = 15
+        Width = 230
+        Caption = 'Descrição'
+      end
+      object lblQtdEstoqueProd: TLabel
+        Left = 320
+        Height = 15
+        Top = 15
+        Width = 238
+        Caption = 'Qtd. em Estoque'
+      end
+      object edtDescricaoProd: TEdit
+        Left = 40
+        Height = 23
+        Top = 35
+        Width = 230
+        Enabled = False
+        TabOrder = 1
+      end
+      object edtQtdEstoqueProd: TEdit
+        Left = 320
+        Height = 23
+        Top = 35
+        Width = 238
+        Enabled = False
+        TabOrder = 0
+      end
+    end
+  end
+end
