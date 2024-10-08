@@ -1,12 +1,12 @@
 object frmFornecedor: TfrmFornecedor
-  Left = 440
-  Height = 478
-  Top = 181
-  Width = 630
+  Left = 275
+  Height = 600
+  Top = 100
+  Width = 600
   Caption = 'frmFornecedor'
-  ClientHeight = 478
-  ClientWidth = 630
-  Color = 9948159
+  ClientHeight = 600
+  ClientWidth = 600
+  Color = clWhite
   OnClose = FormClose
   LCLVersion = '3.2.0.0'
   object btIncluir: TButton

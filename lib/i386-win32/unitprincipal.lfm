@@ -4,11 +4,11 @@ object frmPrincipal: TfrmPrincipal
   Top = 96
   Width = 600
   Caption = 'frmPrincipal'
-  ChildSizing.TopBottomSpacing = 150
-  ChildSizing.VerticalSpacing = 50
+  ChildSizing.TopBottomSpacing = 160
+  ChildSizing.VerticalSpacing = 90
   ClientHeight = 600
   ClientWidth = 600
-  Color = 9948159
+  Color = 15827768
   Font.CharSet = ANSI_CHARSET
   Font.Height = -13
   Font.Name = 'System'
@@ -19,7 +19,7 @@ object frmPrincipal: TfrmPrincipal
   object pnlCadastros: TPanel
     Left = 0
     Height = 80
-    Top = 150
+    Top = 160
     Width = 600
     Align = alTop
     ChildSizing.LeftRightSpacing = 10
@@ -32,7 +32,9 @@ object frmPrincipal: TfrmPrincipal
     ChildSizing.ControlsPerLine = 1
     ClientHeight = 80
     ClientWidth = 600
+    Color = clWhite
     ParentBackground = False
+    ParentColor = False
     TabOrder = 0
     object Label1: TLabel
       Left = 11
@@ -42,6 +44,7 @@ object frmPrincipal: TfrmPrincipal
       Align = alTop
       Caption = 'CADASTROS'
       Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
       Font.Height = -13
       Font.Name = 'System'
       Font.Pitch = fpVariable
@@ -103,7 +106,7 @@ object frmPrincipal: TfrmPrincipal
   object pnlVendas: TPanel
     Left = 0
     Height = 80
-    Top = 280
+    Top = 330
     Width = 600
     Align = alTop
     ChildSizing.LeftRightSpacing = 10
@@ -113,7 +116,9 @@ object frmPrincipal: TfrmPrincipal
     ChildSizing.ControlsPerLine = 1
     ClientHeight = 80
     ClientWidth = 600
+    Color = clWhite
     ParentBackground = False
+    ParentColor = False
     TabOrder = 1
     object Label2: TLabel
       Left = 11
@@ -122,12 +127,15 @@ object frmPrincipal: TfrmPrincipal
       Width = 578
       Align = alTop
       Caption = 'VENDAS'
+      Color = 15827768
       Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
       Font.Height = -19
       Font.Name = 'System'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       Font.Style = [fsBold, fsUnderline]
+      ParentColor = False
       ParentFont = False
     end
     object btPedidos: TButton

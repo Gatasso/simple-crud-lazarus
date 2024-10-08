@@ -5,7 +5,7 @@ unit unitClientes;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls;
 
 type
 
@@ -31,6 +31,9 @@ type
     lblRG: TLabel;
     lblNome: TLabel;
     lblCPF: TLabel;
+    pnlCod: TPanel;
+    pnlCod1: TPanel;
+    Panel1: TPanel;
     procedure btAlterarClick(Sender: TObject);
     procedure btCancelarClick(Sender: TObject);
     procedure btConsultarClick(Sender: TObject);

@@ -8,9 +8,9 @@
       <Unit>
         <Filename Value="banco.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <CursorPos X="15" Y="15"/>
-        <UsageCount Value="90"/>
+        <UsageCount Value="94"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -20,10 +20,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitPrincipal"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="32"/>
         <CursorPos X="93" Y="41"/>
-        <UsageCount Value="90"/>
+        <UsageCount Value="94"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -36,7 +36,7 @@
         <UnitName Value="unitDM"/>
         <TopLine Value="6"/>
         <CursorPos Y="22"/>
-        <UsageCount Value="90"/>
+        <UsageCount Value="94"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -50,7 +50,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="55"/>
         <CursorPos X="21" Y="196"/>
-        <UsageCount Value="90"/>
+        <UsageCount Value="94"/>
       </Unit>
       <Unit>
         <Filename Value="unitfornecedores.pas"/>
@@ -59,10 +59,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitFornecedores"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="44"/>
-        <CursorPos X="84" Y="45"/>
-        <UsageCount Value="90"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="58"/>
+        <CursorPos X="110" Y="53"/>
+        <UsageCount Value="94"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="unitprodutos.pas"/>
@@ -73,8 +75,8 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
         <TopLine Value="59"/>
-        <CursorPos X="11" Y="59"/>
-        <UsageCount Value="81"/>
+        <CursorPos X="86" Y="75"/>
+        <UsageCount Value="85"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -87,7 +89,7 @@
         <EditorIndex Value="1"/>
         <TopLine Value="521"/>
         <CursorPos X="63" Y="546"/>
-        <UsageCount Value="74"/>
+        <UsageCount Value="78"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -96,7 +98,7 @@
         <UnitName Value="unitEnableControl"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="28" Y="12"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="75"/>
       </Unit>
       <Unit>
         <Filename Value="modalprodutos.pas"/>
@@ -105,10 +107,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="modalProdutos"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="48"/>
         <CursorPos X="60" Y="61"/>
-        <UsageCount Value="66"/>
+        <UsageCount Value="70"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -118,10 +120,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="modalClientes"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="21"/>
         <CursorPos X="9" Y="67"/>
-        <UsageCount Value="62"/>
+        <UsageCount Value="66"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -133,7 +135,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="2"/>
         <CursorPos X="51" Y="8"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -143,7 +145,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1665"/>
         <CursorPos X="15" Y="1679"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="C:\lazarus\lcl\stdctrls.pp"/>
@@ -151,12 +153,12 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1255"/>
         <CursorPos X="14" Y="1296"/>
-        <UsageCount Value="6"/>
+        <UsageCount Value="5"/>
       </Unit>
       <Unit>
         <Filename Value="C:\lazarus\docs\xml\lcl\dialogs\trymessagedlg.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">

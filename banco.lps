@@ -8,9 +8,9 @@
       <Unit>
         <Filename Value="banco.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="9"/>
         <CursorPos X="15" Y="15"/>
-        <UsageCount Value="91"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -20,10 +20,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitPrincipal"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="32"/>
         <CursorPos X="93" Y="41"/>
-        <UsageCount Value="91"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -36,7 +36,7 @@
         <UnitName Value="unitDM"/>
         <TopLine Value="6"/>
         <CursorPos Y="22"/>
-        <UsageCount Value="91"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -47,10 +47,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitClientes"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="55"/>
-        <CursorPos X="21" Y="196"/>
-        <UsageCount Value="91"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="168"/>
+        <CursorPos X="21" Y="199"/>
+        <UsageCount Value="95"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="unitfornecedores.pas"/>
@@ -59,11 +61,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unitFornecedores"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="43"/>
-        <CursorPos X="110" Y="53"/>
-        <UsageCount Value="91"/>
+        <TopLine Value="58"/>
+        <CursorPos X="110" Y="58"/>
+        <UsageCount Value="95"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -73,10 +74,11 @@
         <ComponentName Value="frmProdutos"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
         <TopLine Value="59"/>
-        <CursorPos X="86" Y="75"/>
-        <UsageCount Value="82"/>
+        <CursorPos X="78" Y="67"/>
+        <UsageCount Value="86"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -89,8 +91,10 @@
         <EditorIndex Value="1"/>
         <TopLine Value="521"/>
         <CursorPos X="63" Y="546"/>
-        <UsageCount Value="75"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="79"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="unitenablecontrol.pas"/>
@@ -98,7 +102,7 @@
         <UnitName Value="unitEnableControl"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="28" Y="12"/>
-        <UsageCount Value="72"/>
+        <UsageCount Value="76"/>
       </Unit>
       <Unit>
         <Filename Value="modalprodutos.pas"/>
@@ -107,10 +111,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="modalProdutos"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="48"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="47"/>
         <CursorPos X="60" Y="61"/>
-        <UsageCount Value="67"/>
+        <UsageCount Value="71"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -120,10 +124,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="modalClientes"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="21"/>
         <CursorPos X="9" Y="67"/>
-        <UsageCount Value="63"/>
+        <UsageCount Value="67"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -135,7 +139,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="2"/>
         <CursorPos X="51" Y="8"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="29"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -145,7 +149,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1665"/>
         <CursorPos X="15" Y="1679"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="C:\lazarus\lcl\stdctrls.pp"/>
@@ -153,103 +157,15 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1255"/>
         <CursorPos X="14" Y="1296"/>
-        <UsageCount Value="6"/>
+        <UsageCount Value="5"/>
       </Unit>
       <Unit>
         <Filename Value="C:\lazarus\docs\xml\lcl\dialogs\trymessagedlg.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="517" TopLine="511"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="519" TopLine="511"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="520" TopLine="511"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="521" TopLine="511"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="522" TopLine="511"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="519" TopLine="513"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="520" TopLine="513"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="519" TopLine="513"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="520" TopLine="513"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="521" TopLine="513"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="516" TopLine="510"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="541" TopLine="524"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="520" TopLine="505"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="519" TopLine="505"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="520" TopLine="505"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="521" Column="64" TopLine="505"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="519" Column="57" TopLine="514"/>
-      </Position>
-      <Position>
-        <Filename Value="unitprincipal.pas"/>
-        <Caret Line="39" Column="93" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="unitprincipal.pas"/>
-        <Caret Line="40" Column="93" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="unitprodutos.pas"/>
-        <Caret Line="53" Column="11" TopLine="253"/>
-      </Position>
-      <Position>
-        <Filename Value="unitprodutos.pas"/>
-        <Caret Line="54" Column="11" TopLine="54"/>
-      </Position>
-      <Position>
-        <Filename Value="unitprodutos.pas"/>
-        <Caret Line="55" Column="11" TopLine="55"/>
-      </Position>
       <Position>
         <Filename Value="unitprodutos.pas"/>
         <Caret Line="58" Column="11" TopLine="58"/>
@@ -281,6 +197,94 @@
       <Position>
         <Filename Value="unitprodutos.pas"/>
         <Caret Line="60" Column="11" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="53" Column="110" TopLine="58"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="55" Column="110" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="56" Column="110" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="55" Column="110" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="54" Column="110" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="55" Column="110" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="56" Column="110" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="55" Column="110" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="57" Column="110" TopLine="57"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="56" Column="110" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="55" Column="110" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="56" Column="110" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="57" Column="110" TopLine="57"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="58" Column="110" TopLine="58"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="57" Column="110" TopLine="57"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="58" Column="110" TopLine="58"/>
+      </Position>
+      <Position>
+        <Filename Value="unitfornecedores.pas"/>
+        <Caret Line="57" Column="110" TopLine="57"/>
+      </Position>
+      <Position>
+        <Filename Value="unitclientes.pas"/>
+        <Caret Line="196" Column="21" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="unitclientes.pas"/>
+        <Caret Line="199" Column="21" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="unitclientes.pas"/>
+        <Caret Line="198" Column="21" TopLine="167"/>
+      </Position>
+      <Position>
+        <Filename Value="unitclientes.pas"/>
+        <Caret Line="197" Column="21" TopLine="166"/>
+      </Position>
+      <Position>
+        <Filename Value="unitclientes.pas"/>
+        <Caret Line="198" Column="21" TopLine="167"/>
       </Position>
     </JumpHistory>
     <RunParams>

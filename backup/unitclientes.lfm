@@ -6,6 +6,7 @@ object frmClientes: TfrmClientes
   Caption = 'frmClientes'
   ClientHeight = 473
   ClientWidth = 581
+  Color = 9948159
   OnClose = FormClose
   LCLVersion = '3.2.0.0'
   object btIncluir: TButton

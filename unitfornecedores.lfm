@@ -1,173 +1,230 @@
 object frmFornecedor: TfrmFornecedor
-  Left = 440
-  Height = 478
-  Top = 181
-  Width = 630
+  Left = 275
+  Height = 600
+  Top = 100
+  Width = 600
   Caption = 'frmFornecedor'
-  ClientHeight = 478
-  ClientWidth = 630
+  ClientHeight = 600
+  ClientWidth = 600
   Color = clWhite
   OnClose = FormClose
   LCLVersion = '3.2.0.0'
-  object btIncluir: TButton
-    Left = 83
-    Height = 25
-    Top = 63
-    Width = 69
-    Caption = 'Incluir'
+  object pnlHeader: TPanel
+    Left = 0
+    Height = 100
+    Top = 0
+    Width = 600
+    Align = alTop
+    ClientHeight = 100
+    ClientWidth = 600
+    Color = 15827768
+    ParentBackground = False
+    ParentColor = False
     TabOrder = 0
-    OnClick = btIncluirClick
+    object pnlCod: TPanel
+      Left = 1
+      Height = 50
+      Top = 1
+      Width = 598
+      Align = alTop
+      ChildSizing.LeftRightSpacing = 40
+      ChildSizing.HorizontalSpacing = 25
+      ChildSizing.EnlargeVertical = crsHomogenousSpaceResize
+      ChildSizing.Layout = cclTopToBottomThenLeftToRight
+      ClientHeight = 50
+      ClientWidth = 598
+      ParentBackground = False
+      TabOrder = 0
+      object edtCod: TEdit
+        Left = 40
+        Height = 25
+        Top = 13
+        Width = 80
+        AutoSize = False
+        Color = clWhite
+        TabOrder = 0
+      end
+      object btConsultar: TButton
+        Left = 145
+        Height = 25
+        Top = 13
+        Width = 77
+        Caption = 'Consultar'
+        TabOrder = 1
+        OnClick = btConsultarClick
+      end
+    end
+    object pnlOp: TPanel
+      Left = 1
+      Height = 50
+      Top = 51
+      Width = 598
+      Align = alTop
+      ChildSizing.LeftRightSpacing = 40
+      ChildSizing.HorizontalSpacing = 25
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousSpaceResize
+      ChildSizing.Layout = cclTopToBottomThenLeftToRight
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 50
+      ClientWidth = 598
+      ParentBackground = False
+      TabOrder = 1
+      object btIncluir: TButton
+        Left = 40
+        Height = 25
+        Top = 13
+        Width = 81
+        Caption = 'Incluir'
+        TabOrder = 0
+        OnClick = btIncluirClick
+      end
+      object btAlterar: TButton
+        Left = 146
+        Height = 25
+        Top = 13
+        Width = 83
+        Caption = 'Alterar'
+        TabOrder = 1
+        OnClick = btAlterarClick
+      end
+      object btSalvar: TButton
+        Left = 254
+        Height = 25
+        Top = 13
+        Width = 79
+        Caption = 'Salvar'
+        Enabled = False
+        TabOrder = 4
+        OnClick = btSalvarClick
+      end
+      object btCancelar: TButton
+        Left = 358
+        Height = 25
+        Top = 13
+        Width = 94
+        Caption = 'Cancelar'
+        Enabled = False
+        TabOrder = 2
+        OnClick = btCancelarClick
+      end
+      object btExcluir: TButton
+        Left = 477
+        Height = 25
+        Top = 13
+        Width = 81
+        Caption = 'Excluir'
+        TabOrder = 3
+        OnClick = btExcluirClick
+      end
+    end
   end
-  object btAlterar: TButton
-    Left = 167
-    Height = 25
-    Top = 64
-    Width = 69
-    Caption = 'Alterar'
+  object pnlBody: TPanel
+    Left = 0
+    Height = 500
+    Top = 100
+    Width = 600
+    Align = alClient
+    ClientHeight = 500
+    ClientWidth = 600
+    ParentBackground = False
     TabOrder = 1
-    OnClick = btAlterarClick
-  end
-  object btSalvar: TButton
-    Left = 256
-    Height = 25
-    Top = 63
-    Width = 69
-    Caption = 'Salvar'
-    Enabled = False
-    TabOrder = 2
-    OnClick = btSalvarClick
-  end
-  object btExcluir: TButton
-    Left = 421
-    Height = 25
-    Top = 63
-    Width = 69
-    Caption = 'Excluir'
-    TabOrder = 3
-    OnClick = btExcluirClick
-  end
-  object btCancelar: TButton
-    Left = 336
-    Height = 25
-    Top = 63
-    Width = 69
-    Caption = 'Cancelar'
-    Enabled = False
-    TabOrder = 4
-    OnClick = btCancelarClick
-  end
-  object edtNome: TEdit
-    Left = 87
-    Height = 23
-    Top = 133
-    Width = 114
-    AutoSize = False
-    Enabled = False
-    TabOrder = 5
-  end
-  object lblNome: TLabel
-    Left = 88
-    Height = 15
-    Top = 112
-    Width = 33
-    Caption = 'Nome'
-  end
-  object edtCNPJ: TEdit
-    Left = 232
-    Height = 23
-    Top = 133
-    Width = 114
-    AutoSize = False
-    Enabled = False
-    TabOrder = 6
-  end
-  object lblCNPJ: TLabel
-    Left = 232
-    Height = 15
-    Top = 112
-    Width = 27
-    Caption = 'CNPJ'
-  end
-  object edtFantasia: TEdit
-    Left = 376
-    Height = 23
-    Top = 133
-    Width = 114
-    AutoSize = False
-    Enabled = False
-    TabOrder = 7
-  end
-  object lblFantasia: TLabel
-    Left = 376
-    Height = 15
-    Top = 112
-    Width = 43
-    Caption = 'Fantasia'
-  end
-  object edtEndereco: TEdit
-    Left = 232
-    Height = 23
-    Top = 205
-    Width = 258
-    AutoSize = False
-    Enabled = False
-    TabOrder = 8
-  end
-  object lblEndereco: TLabel
-    Left = 233
-    Height = 15
-    Top = 184
-    Width = 49
-    Caption = 'Endereço'
-  end
-  object edtCEP: TEdit
-    Left = 88
-    Height = 23
-    Top = 205
-    Width = 114
-    AutoSize = False
-    Enabled = False
-    TabOrder = 9
-  end
-  object lblCEP: TLabel
-    Left = 88
-    Height = 15
-    Top = 184
-    Width = 21
-    Caption = 'CEP'
-  end
-  object edtTelefone: TEdit
-    Left = 88
-    Height = 23
-    Top = 277
-    Width = 146
-    AutoSize = False
-    Enabled = False
-    TabOrder = 10
-  end
-  object lblTelefone: TLabel
-    Left = 88
-    Height = 15
-    Top = 256
-    Width = 44
-    Caption = 'Telefone'
-  end
-  object btConsultar: TButton
-    Left = 256
-    Height = 29
-    Top = 24
-    Width = 66
-    Caption = 'Consultar'
-    TabOrder = 11
-    OnClick = btConsultarClick
-  end
-  object edtCod: TEdit
-    Left = 170
-    Height = 23
-    Top = 24
-    Width = 67
-    AutoSize = False
-    Color = clWhite
-    TabOrder = 12
+    object lblNome: TLabel
+      Left = 40
+      Height = 15
+      Top = 165
+      Width = 33
+      AutoSize = False
+      Caption = 'Nome'
+    end
+    object lblFantasia: TLabel
+      Left = 248
+      Height = 15
+      Top = 165
+      Width = 43
+      Caption = 'Fantasia'
+    end
+    object lblCNPJ: TLabel
+      Left = 453
+      Height = 15
+      Top = 165
+      Width = 27
+      Caption = 'CNPJ'
+    end
+    object edtNome: TEdit
+      Left = 40
+      Height = 23
+      Top = 180
+      Width = 200
+      AutoSize = False
+      Enabled = False
+      TabOrder = 0
+    end
+    object edtFantasia: TEdit
+      Left = 248
+      Height = 23
+      Top = 180
+      Width = 190
+      AutoSize = False
+      Enabled = False
+      TabOrder = 2
+    end
+    object edtCNPJ: TEdit
+      Left = 453
+      Height = 23
+      Top = 180
+      Width = 114
+      AutoSize = False
+      Enabled = False
+      TabOrder = 1
+    end
+    object edtEndereco: TEdit
+      Left = 178
+      Height = 23
+      Top = 255
+      Width = 230
+      AutoSize = False
+      Enabled = False
+      TabOrder = 3
+    end
+    object lblEndereco: TLabel
+      Left = 178
+      Height = 15
+      Top = 240
+      Width = 49
+      Caption = 'Endereço'
+    end
+    object edtCEP: TEdit
+      Left = 40
+      Height = 23
+      Top = 255
+      Width = 130
+      AutoSize = False
+      Enabled = False
+      TabOrder = 4
+    end
+    object lblCEP: TLabel
+      Left = 40
+      Height = 15
+      Top = 240
+      Width = 21
+      Caption = 'CEP'
+    end
+    object edtTelefone: TEdit
+      Left = 423
+      Height = 23
+      Top = 255
+      Width = 144
+      AutoSize = False
+      Enabled = False
+      TabOrder = 5
+    end
+    object lblTelefone: TLabel
+      Left = 423
+      Height = 15
+      Top = 240
+      Width = 44
+      Caption = 'Telefone'
+    end
   end
 end

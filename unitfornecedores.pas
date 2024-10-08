@@ -5,7 +5,8 @@ unit unitFornecedores;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
+  ComCtrls;
 
 type
 
@@ -31,6 +32,10 @@ type
     lblNome: TLabel;
     lblFantasia: TLabel;
     lblTelefone: TLabel;
+    pnlHeader: TPanel;
+    pnlCod: TPanel;
+    pnlOp: TPanel;
+    pnlBody: TPanel;
     procedure btAlterarClick(Sender: TObject);
     procedure btCancelarClick(Sender: TObject);
     procedure btConsultarClick(Sender: TObject);
