@@ -6,6 +6,7 @@ object frmPedidos: TfrmPedidos
   Caption = 'frmPedidos'
   ClientHeight = 616
   ClientWidth = 576
+  Color = 9948159
   OnClose = FormClose
   OnShow = FormShow
   LCLVersion = '3.2.0.0'
@@ -307,7 +308,9 @@ object frmPedidos: TfrmPedidos
       end>
     DataSource = dsItensPedido
     Enabled = False
+    ReadOnly = True
     TabOrder = 20
+    OnDblClick = DBGrid1DblClick
   end
   object btUpDown: TUpDown
     Left = 218

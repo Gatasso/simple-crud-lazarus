@@ -308,7 +308,9 @@ object frmPedidos: TfrmPedidos
       end>
     DataSource = dsItensPedido
     Enabled = False
+    ReadOnly = True
     TabOrder = 20
+    OnDblClick = DBGrid1DblClick
   end
   object btUpDown: TUpDown
     Left = 218
