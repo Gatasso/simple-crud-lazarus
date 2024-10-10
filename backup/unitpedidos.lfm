@@ -4,8 +4,8 @@ object frmPedidos: TfrmPedidos
   Top = 105
   Width = 576
   Caption = 'frmPedidos'
-  ClientHeight = 616
-  ClientWidth = 576
+  ClientHeight = 0
+  ClientWidth = 0
   Color = 9948159
   OnClose = FormClose
   OnShow = FormShow
@@ -181,7 +181,7 @@ object frmPedidos: TfrmPedidos
     NumbersOnly = True
     TabOrder = 14
     Text = '0'
-    OnEditingDone = edtDescontoPorcentEditingDone
+    OnExit = edtDescontoPorcentExit
   end
   object Label6: TLabel
     Left = 466

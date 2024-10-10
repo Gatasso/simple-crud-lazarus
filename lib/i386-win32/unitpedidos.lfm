@@ -181,7 +181,7 @@ object frmPedidos: TfrmPedidos
     NumbersOnly = True
     TabOrder = 14
     Text = '0'
-    OnEditingDone = edtDescontoPorcentEditingDone
+    OnExit = edtDescontoPorcentExit
   end
   object Label6: TLabel
     Left = 466

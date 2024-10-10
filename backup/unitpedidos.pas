@@ -79,10 +79,10 @@ type
     procedure btSalvarPedidoClick(Sender: TObject);
     procedure calculaSubTotal();
     procedure calculaTotalPedido();
-    procedure edtDescontoPorcentEditingDone(Sender: TObject);
     procedure btExcluirPedidoClick(Sender: TObject);
     procedure btConsultarPedidoClick(Sender: TObject);
     procedure DBGrid1DblClick(Sender: TObject);
+    procedure edtDescontoPorcentExit(Sender: TObject);
   private
 
   public
@@ -306,6 +306,46 @@ uses UnitDM, modalProdutos, modalClientes;
              rxItensPedido.Next;
            end;
          end;
+       end
+       else if opc = 2 then
+       begin
+         with DM.zqPedidos do
+         begin
+           Close;
+           SQL.Clear;
+           SQL.Add('update pedidosm set cod_cliente=:cod_cliente, pcent_desconto=:pcent_desconto, total_desconto=:total_desconto, subtotal_pedido=:subtotal_pedido, total_pedido=:total_pedido');
+           SQL.Add('where id_pedido=:id_pedido');
+           ParamByName('id_pedido').AsInteger:= StrToInt(edtCodPedido.Text);
+           ParamByName('cod_cliente').AsInteger := StrToInt(edtCodCliente.Text);
+           ParamByName('pcent_desconto').AsInteger := StrToInt(edtDescontoPorcent.Text);
+           ParamByName('total_desconto').AsFloat := StrToFloat(edtValorDesconto.Text);
+           ParamByName('subtotal_pedido').AsFloat := StrToFloat(edtSubTotal.Text);
+           ParamByName('total_pedido').AsFloat := StrToFloat(edtValorTotalPedido.Text);
+           ExecSQL;
+         end;
+         with DM.zqTemp do
+         begin
+           Close;
+           SQL.Clear;
+           SQL.Add('delete from pedidosi where id_pedido=:id_pedido');
+           ParamByName('id_pedido').asInteger:= StrToInt(edtCodPedido.Text);
+           ExecSQL;
+
+           while not rxItensPedido.EOF do
+           begin
+             Close;
+             SQL.Clear;
+             SQL.Add('insert into pedidosi (id_pedido, cod_produto, quantidade, valor_unit, valor_total)');
+             SQL.Add('values (:id_pedido, :cod_produto, :quantidade, :valor_unit, :valor_total)');
+             ParamByName('id_pedido').AsInteger:= maxIdPedido;
+             ParamByName('cod_produto').AsInteger:= rxItensPedidoCod.AsInteger;
+             ParamByName('quantidade').AsInteger:= rxItensPedidoQntd.AsInteger;
+             ParamByName('valor_unit').AsFloat:= rxItensPedidoVlrUnd.AsFloat;
+             ParamByName('valor_total').AsFloat:= rxItensPedidoVlrTotal.AsFloat;
+             ExecSQL;
+           end;
+           rxItensPedido.Next;
+         end;
        end;
      end;
      limpaCampos();
@@ -393,6 +433,7 @@ uses UnitDM, modalProdutos, modalClientes;
 
            rxItensPedido.EmptyTable;
            if rxItensPedido.Active = false then rxItensPedido.Active:= true;
+           rxItensPedido.DisableControls;
            while not EOF do
            begin
              rxItensPedido.Append;
@@ -404,6 +445,7 @@ uses UnitDM, modalProdutos, modalClientes;
              rxItensPedido.Post;
              Next;
            end;
+           rxItensPedido.EnableControls;
          end;
        end;
        btAlterarPedido.SetFocus;
@@ -467,6 +509,8 @@ uses UnitDM, modalProdutos, modalClientes;
          rxItensPedido.post;
       finally
          calculaSubTotal();
+         edtDescontoPorcentExit(self);
+         calculaTotalPedido();
          edtCodProd.Clear;
          edtNomeProd.Clear;
          edtValorUnitProd.Clear;
@@ -515,7 +559,7 @@ uses UnitDM, modalProdutos, modalClientes;
      calculaTotalPedido();
    end;
 // Cálculo Valor do Desconto
-   procedure TfrmPedidos.edtDescontoPorcentEditingDone(Sender: TObject);
+   procedure TfrmPedidos.edtDescontoPorcentExit(Sender: TObject);
    begin
      if isEditable then
      begin
@@ -553,7 +597,6 @@ uses UnitDM, modalProdutos, modalClientes;
      isEditable:= false;
      calculaTotalPedido();
    end;
-
 // Cálculo Valor Total do Pedido
    procedure TfrmPedidos.calculaTotalPedido();
    begin
@@ -562,22 +605,17 @@ uses UnitDM, modalProdutos, modalClientes;
                                    StrToFloat(edtSubTotal.Text) -
                                    StrToFloat(edtValorDesconto.Text));
    end;
-
 procedure TfrmPedidos.DBGrid1DblClick(Sender: TObject);
 begin
-  if MessageDlg('Você deseja mesmo remover o item do pedido?', mtConfirmation, [mbYes, mbNo], 0 ) = mrYes then
+  if MessageDlg('Você deseja mesmo remover o item do pedido?', mtConfirmation, [mbYes, mbNo], 0) = mrYes then
   begin
-    ShowMessage(rxItensPedidoCod.Text);
-    with DM.zqTemp do
-    begin
-      Close;
-      SQL.Clear;
-      SQL.Add('delete from pedidosi where cod_produto=:cod_produto');
-      ParamByName('cod_produto').AsInteger:= rxItensPedidoCod.AsInteger;
-      ExecSQL;
-    end;
+    rxItensPedido.Delete;
+    calculaSubTotal();
+    edtDescontoPorcentExit(self);
+    calculaTotalPedido();
   end;
 end;
+
 
 end.
 

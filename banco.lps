@@ -8,9 +8,9 @@
       <Unit>
         <Filename Value="banco.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <CursorPos X="15" Y="15"/>
-        <UsageCount Value="101"/>
+        <UsageCount Value="109"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -23,7 +23,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
         <CursorPos X="93" Y="41"/>
-        <UsageCount Value="101"/>
+        <UsageCount Value="109"/>
       </Unit>
       <Unit>
         <Filename Value="unitdm.pas"/>
@@ -34,7 +34,7 @@
         <UnitName Value="unitDM"/>
         <TopLine Value="6"/>
         <CursorPos Y="22"/>
-        <UsageCount Value="101"/>
+        <UsageCount Value="109"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -48,7 +48,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="168"/>
         <CursorPos X="21" Y="199"/>
-        <UsageCount Value="101"/>
+        <UsageCount Value="109"/>
       </Unit>
       <Unit>
         <Filename Value="unitfornecedores.pas"/>
@@ -60,7 +60,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="58"/>
         <CursorPos X="110" Y="58"/>
-        <UsageCount Value="101"/>
+        <UsageCount Value="109"/>
       </Unit>
       <Unit>
         <Filename Value="unitprodutos.pas"/>
@@ -68,10 +68,12 @@
         <ComponentName Value="frmProdutos"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="242"/>
-        <CursorPos X="78" Y="67"/>
-        <UsageCount Value="92"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="106"/>
+        <CursorPos X="15" Y="112"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="unitpedidos.pas"/>
@@ -81,9 +83,9 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="552"/>
-        <CursorPos X="59" Y="565"/>
-        <UsageCount Value="85"/>
+        <TopLine Value="391"/>
+        <CursorPos X="42" Y="392"/>
+        <UsageCount Value="93"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -93,7 +95,7 @@
         <UnitName Value="unitEnableControl"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="28" Y="12"/>
-        <UsageCount Value="82"/>
+        <UsageCount Value="90"/>
       </Unit>
       <Unit>
         <Filename Value="modalprodutos.pas"/>
@@ -102,10 +104,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="modalProdutos"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="47"/>
         <CursorPos X="60" Y="61"/>
-        <UsageCount Value="77"/>
+        <UsageCount Value="85"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -115,10 +117,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="modalClientes"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="21"/>
         <CursorPos X="9" Y="67"/>
-        <UsageCount Value="73"/>
+        <UsageCount Value="81"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -128,9 +130,9 @@
         <ComponentName Value="frmBuscaPedidos"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <CursorPos X="51" Y="8"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -140,7 +142,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1665"/>
         <CursorPos X="15" Y="1679"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit>
       <Unit>
         <Filename Value="C:\lazarus\lcl\stdctrls.pp"/>
@@ -148,66 +150,134 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1255"/>
         <CursorPos X="14" Y="1296"/>
-        <UsageCount Value="4"/>
+        <UsageCount Value="3"/>
       </Unit>
       <Unit>
         <Filename Value="C:\lazarus\docs\xml\lcl\dialogs\trymessagedlg.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="12">
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="546" Column="63" TopLine="521"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="549" Column="88" TopLine="534"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="224" Column="10" TopLine="232"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="518" Column="6" TopLine="494"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="425" Column="7" TopLine="410"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="126" Column="45" TopLine="103"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="93" Column="106" TopLine="186"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="261" Column="83" TopLine="240"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="485" Column="24" TopLine="475"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="163" Column="84" TopLine="147"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="unitpedidos.pas"/>
         <Caret Line="572" Column="97" TopLine="476"/>
       </Position>
       <Position>
         <Filename Value="unitpedidos.pas"/>
-        <Caret Line="234" Column="94" TopLine="268"/>
+        <Caret Line="568" Column="97" TopLine="513"/>
+      </Position>
+      <Position>
+        <Filename Value="unitprodutos.pas"/>
+        <Caret Line="249" Column="90" TopLine="271"/>
       </Position>
       <Position>
         <Filename Value="unitpedidos.pas"/>
-        <Caret Line="343" Column="6" TopLine="355"/>
+        <Caret Line="348" Column="11" TopLine="309"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="439" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="440" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="441" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="442" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="443" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="444" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="445" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="446" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="437" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="439" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="440" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="441" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="442" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="443" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="444" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="445" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="446" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="437" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="448" TopLine="425"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="451" TopLine="426"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="439" TopLine="424"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="226" Column="6" TopLine="222"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="623" Column="40" TopLine="596"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="622" Column="21" TopLine="515"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="614" Column="39" TopLine="588"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="611" Column="5" TopLine="588"/>
       </Position>
     </JumpHistory>
     <RunParams>
