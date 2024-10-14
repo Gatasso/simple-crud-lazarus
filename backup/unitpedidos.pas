@@ -331,23 +331,25 @@ uses UnitDM, modalProdutos, modalClientes;
            ParamByName('id_pedido').asInteger:= StrToInt(edtCodPedido.Text);
            ExecSQL;
 
+           rxItensPedido.First;
            while not rxItensPedido.EOF do
            begin
              Close;
              SQL.Clear;
              SQL.Add('insert into pedidosi (id_pedido, cod_produto, quantidade, valor_unit, valor_total)');
              SQL.Add('values (:id_pedido, :cod_produto, :quantidade, :valor_unit, :valor_total)');
-             ParamByName('id_pedido').AsInteger:= maxIdPedido;
+             ParamByName('id_pedido').AsInteger:= StrToInt(edtCodPedido.Text);
              ParamByName('cod_produto').AsInteger:= rxItensPedidoCod.AsInteger;
              ParamByName('quantidade').AsInteger:= rxItensPedidoQntd.AsInteger;
              ParamByName('valor_unit').AsFloat:= rxItensPedidoVlrUnd.AsFloat;
              ParamByName('valor_total').AsFloat:= rxItensPedidoVlrTotal.AsFloat;
              ExecSQL;
+             rxItensPedido.Next;
            end;
-           rxItensPedido.Next;
          end;
        end;
      end;
+     opc:= 0;
      limpaCampos();
      statusInicialCampos();
      btStatusInicial();
@@ -355,9 +357,9 @@ uses UnitDM, modalProdutos, modalClientes;
 // Operação Exluir Pedido
    procedure TfrmPedidos.btExcluirPedidoClick(Sender: TObject);
    begin
-     if (edtCodPedido.Text = '') or (rxItensPedido.RecordCount = 0) then
+     if (edtCodPedido.Text = '') and (rxItensPedido.RecordCount = 0) then
      begin
-       MessageDlg('Consulte um produto', mtWarning, [mbOK], 0);
+       MessageDlg('Consulte um Pedido', mtWarning, [mbOK], 0);
        edtCodPedido.SetFocus;
        exit;
      end

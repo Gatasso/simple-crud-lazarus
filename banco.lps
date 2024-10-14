@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="6"/>
         <CursorPos X="15" Y="15"/>
-        <UsageCount Value="109"/>
+        <UsageCount Value="110"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -23,7 +23,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
         <CursorPos X="93" Y="41"/>
-        <UsageCount Value="109"/>
+        <UsageCount Value="110"/>
       </Unit>
       <Unit>
         <Filename Value="unitdm.pas"/>
@@ -34,7 +34,7 @@
         <UnitName Value="unitDM"/>
         <TopLine Value="6"/>
         <CursorPos Y="22"/>
-        <UsageCount Value="109"/>
+        <UsageCount Value="110"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -48,7 +48,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="168"/>
         <CursorPos X="21" Y="199"/>
-        <UsageCount Value="109"/>
+        <UsageCount Value="110"/>
       </Unit>
       <Unit>
         <Filename Value="unitfornecedores.pas"/>
@@ -60,7 +60,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="58"/>
         <CursorPos X="110" Y="58"/>
-        <UsageCount Value="109"/>
+        <UsageCount Value="110"/>
       </Unit>
       <Unit>
         <Filename Value="unitprodutos.pas"/>
@@ -71,7 +71,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="106"/>
         <CursorPos X="15" Y="112"/>
-        <UsageCount Value="100"/>
+        <UsageCount Value="101"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -83,9 +83,9 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="391"/>
-        <CursorPos X="42" Y="392"/>
-        <UsageCount Value="93"/>
+        <TopLine Value="542"/>
+        <CursorPos X="26" Y="542"/>
+        <UsageCount Value="94"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -95,7 +95,7 @@
         <UnitName Value="unitEnableControl"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="28" Y="12"/>
-        <UsageCount Value="90"/>
+        <UsageCount Value="91"/>
       </Unit>
       <Unit>
         <Filename Value="modalprodutos.pas"/>
@@ -107,7 +107,7 @@
         <EditorIndex Value="3"/>
         <TopLine Value="47"/>
         <CursorPos X="60" Y="61"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="86"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -120,7 +120,7 @@
         <EditorIndex Value="5"/>
         <TopLine Value="21"/>
         <CursorPos X="9" Y="67"/>
-        <UsageCount Value="81"/>
+        <UsageCount Value="82"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -132,7 +132,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="4"/>
         <CursorPos X="51" Y="8"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="44"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -159,30 +159,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="572" Column="97" TopLine="476"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="568" Column="97" TopLine="513"/>
-      </Position>
-      <Position>
-        <Filename Value="unitprodutos.pas"/>
-        <Caret Line="249" Column="90" TopLine="271"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="348" Column="11" TopLine="309"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="439" TopLine="425"/>
-      </Position>
-      <Position>
-        <Filename Value="unitpedidos.pas"/>
-        <Caret Line="440" TopLine="425"/>
-      </Position>
       <Position>
         <Filename Value="unitpedidos.pas"/>
         <Caret Line="441" TopLine="425"/>
@@ -278,6 +254,30 @@
       <Position>
         <Filename Value="unitpedidos.pas"/>
         <Caret Line="611" Column="5" TopLine="588"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="401" Column="92" TopLine="85"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="120" Column="14" TopLine="94"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="129" Column="67" TopLine="591"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="252" Column="6" TopLine="300"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="348" Column="13" TopLine="304"/>
+      </Position>
+      <Position>
+        <Filename Value="unitpedidos.pas"/>
+        <Caret Line="402" Column="91" TopLine="350"/>
       </Position>
     </JumpHistory>
     <RunParams>

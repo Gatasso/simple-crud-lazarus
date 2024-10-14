@@ -4,8 +4,8 @@ object frmPedidos: TfrmPedidos
   Top = 105
   Width = 576
   Caption = 'frmPedidos'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 616
+  ClientWidth = 576
   Color = 9948159
   OnClose = FormClose
   OnShow = FormShow
